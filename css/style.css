@@ -9,7 +9,7 @@
 
 /** Estilos Generales **/
 p {
-  color: #fff;  
+  color: #fff;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -56,6 +56,7 @@ h2 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   opacity: 0.9;
 }
+
 h3 {
   font-size: 20px;
 }
@@ -73,7 +74,7 @@ h3 {
   top: 0%;
   background: #f2f2f2;
   text-align: center;
-  } 
+}
 
 
 .logo-header {
@@ -93,12 +94,13 @@ h3 {
   font-size: 20px;
   font-weight: bold;
 }
+
 li.menu-item {
   padding: 30px;
-  font-size:larger;
+  font-size: larger;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
- 
+
 }
 
 .main {
@@ -124,6 +126,7 @@ li.menu-item {
   padding: 20px;
   align-content: center;
 }
+
 /*Home Section **/
 
 .home-section {
@@ -177,14 +180,39 @@ li.menu-item {
 /** Footer **/
 
 .footer-section {
-  max-width: 1200px;
+  /*max-width: 1200px;
   margin: 0 auto;
   background: #f2f2f2;
   padding: 20px;
-  color: #0483ba;
+  color: #0483ba;*/
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+  padding: 10px;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  background: #f2f2f2;
+  text-align: centar;
+  font-size: large;
+}
+
+.icono-footer {
+  max-width: 70px;
+  height: 70%;
+  width: 70%;
 }
 
 .footer-creds {
   display: flex;
   justify-content: center;
+}
+
+
+
+.send-email {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
