@@ -129,9 +129,10 @@ li.menu-item {
 
 /*Home Section **/
 
-.home-section {
+#home-section {
   display: flex;
-}
+  
+  }
 
 .wrap-home-section {
   display: flex;
@@ -140,13 +141,15 @@ li.menu-item {
   max-width: 800px;
   color: #fff;
   padding: 15%;
+  
 }
 
 
 /*Login Section*/
 
-.login-section {
+#login-section {
   display: flex;
+  max-height: max-content;
 }
 
 .wrap-login-section {
