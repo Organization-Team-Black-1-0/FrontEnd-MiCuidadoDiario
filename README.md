@@ -25,7 +25,7 @@ Las historias de usuario se originan a partir de posibles usuarios. Por esta raz
 
 3. ¿Tienes algún adulto mayor a tu cargo o cuido?, teniendo como resultado:  
 
-![Consulta 3](/utilities/ImgReadme/Item3.png)  
+![Consulta 3](/utilities/ImgReadme/Item3.png)
 
 4. ¿Tienes experiencia cuidando adultos mayores?, teniendo como resultado:  
 
