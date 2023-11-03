@@ -25,31 +25,31 @@ Las historias de usuario se originan a partir de posibles usuarios. Por esta raz
 
 3. ¿Tienes algún adulto mayor a tu cargo o cuido?, teniendo como resultado:  
 
-![Consulta 3](/utilities/ImgReadme/Item3.png)
+![Consulta 3](/utilities/ImgReadme/item3.png)
 
 4. ¿Tienes experiencia cuidando adultos mayores?, teniendo como resultado:  
 
-![Consulta 4](/utilities/ImgReadme/Item4.png)
+![Consulta 4](/utilities/ImgReadme/item4.png)
 
 5. ¿Conoces cómo manipular los equipos para tomar la presión arterial?, teniendo como resultado:  
 
-![Consulta 5](/utilities/ImgReadme/Item5.png)
+![Consulta 5](/utilities/ImgReadme/item5.png)
 
 6. ¿Te gustaría contar con una aplicación que te ayude a llevar el registro de la presión arterial?, teniendo como resultado:
 
-![Consulta 6](/utilities/ImgReadme/Item6.png)
+![Consulta 6](/utilities/ImgReadme/item6.png)
 
 7. ¿Te gustaría contar con una guía o checklist que te indique como atender al adulto mayor?, teniendo como resultado:
 
-![Consulta 7](/utilities/ImgReadme/Item7.png)
+![Consulta 7](/utilities/ImgReadme/item7.png)
 
 8. ¿Quién prefieres que se registre en la aplicación?, teniendo como resultado:
 
-![Consulta 8](/utilities/ImgReadme/Item8.png)
+![Consulta 8](/utilities/ImgReadme/item8.png)
 
 9.  ¿Te gustaría que la aplicación genere un informe de los datos registrados?, teniendo como resultado:
 
-![Consulta 9](/utilities/ImgReadme/Item9.png)
+![Consulta 9](/utilities/ImgReadme/item9.png)
 
 De la información obtenida podemos validar la factibilidad de nuestro proyecto de desarrollo Web "Mi Cuidado Diario".
 
