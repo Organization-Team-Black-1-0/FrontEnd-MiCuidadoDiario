@@ -15,39 +15,39 @@ Mi cuidado diario es una herramienta que te permitirá como cuidador, seguir y c
 
 Las historias de usuario se originan a partir de posibles usuarios. Por esta razón, hemos creado una encuesta en Google Forms, enfocándonos en resaltar los siguientes aspectos clave para nuestros usuarios objetivo, obteniendo la siguiente información:
 
-1. Indícanos tu rango de edad, teniendo como resultado:
+1. Consulta nro. 1
 
 ![Consulta 1](/utilities/ImgReadme/Item1.png)
 
-2.  Indícanos tu identidad de genero, teniendo como resultado:
+2.  Consulta nro.2
 
 ![Consulta 2](/utilities/ImgReadme/Item2.png)
 
-3. ¿Tienes algún adulto mayor a tu cargo o cuido?, teniendo como resultado:  
+3. Consulta nro.3
 
 ![Consulta 3](/utilities/ImgReadme/item3.png)
 
-4. ¿Tienes experiencia cuidando adultos mayores?, teniendo como resultado:  
+4. Consulta nro.4  
 
 ![Consulta 4](/utilities/ImgReadme/item4.png)
 
-5. ¿Conoces cómo manipular los equipos para tomar la presión arterial?, teniendo como resultado:  
+5. Consulta nro.5
 
 ![Consulta 5](/utilities/ImgReadme/item5.png)
 
-6. ¿Te gustaría contar con una aplicación que te ayude a llevar el registro de la presión arterial?, teniendo como resultado:
+6. Consulta nro. 6
 
 ![Consulta 6](/utilities/ImgReadme/item6.png)
 
-7. ¿Te gustaría contar con una guía o checklist que te indique como atender al adulto mayor?, teniendo como resultado:
+7. Consulta nro.7
 
 ![Consulta 7](/utilities/ImgReadme/item7.png)
 
-8. ¿Quién prefieres que se registre en la aplicación?, teniendo como resultado:
+8. Consulta nro. 8
 
 ![Consulta 8](/utilities/ImgReadme/item8.png)
 
-9.  ¿Te gustaría que la aplicación genere un informe de los datos registrados?, teniendo como resultado:
+9.  Consulta nro.9
 
 ![Consulta 9](/utilities/ImgReadme/item9.png)
 
