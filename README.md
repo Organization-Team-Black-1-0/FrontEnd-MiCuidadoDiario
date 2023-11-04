@@ -6,3 +6,8 @@
 # Olimpiadas Copa
 # Karelis Montenegro
 # Beatriz Maldonado
+
+email
+https://account.proton.me/login
+ID: administrador-mcd
+administrador-mcd@proton.me
