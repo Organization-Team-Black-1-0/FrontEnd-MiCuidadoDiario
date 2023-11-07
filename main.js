@@ -13,7 +13,7 @@ const formulario = document.querySelector("form");
 formulario.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const nombreUsuario = formulario.querySelector("input[name='ID-alfanumerico']").value;
+  const nombreUsuario = formulario.querySelector("input[name='ID_alfanumerico']").value;
   /*const correoElectronico = formulario.querySelector("input[name='correo_electronico']").value;*/
   const contrasena = formulario.querySelector("input[name='contrasena']").value;
 
