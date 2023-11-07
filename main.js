@@ -6,6 +6,7 @@ menuItems.forEach(function (item) {
         e.target.classList.add('active');
     });
 });
+
 /*Inicio Registro Inicial Usuario*/
 
 const formulario = document.querySelector("form");
@@ -14,7 +15,7 @@ formulario.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const nombreUsuario = formulario.querySelector("input[name='ID_alfanumerico']").value;
-  /*const correoElectronico = formulario.querySelector("input[name='correo_electronico']").value;*/
+  const correoElectronico = formulario.querySelector("input[name='correo_electronico']").value;
   const contrasena = formulario.querySelector("input[name='contrasena']").value;
 
   if (nombreUsuario === "") {
@@ -34,7 +35,7 @@ formulario.addEventListener("submit", async (e) => {
 
   const usuario = {
     ID-alfanumerico: nombreUsuario,
-    /*correo_electronico: correoElectronico,*/
+    correo_electronico: correoElectronico,
     contrasena: contrasena,
   };
 
