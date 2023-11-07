@@ -34,10 +34,13 @@ formulario.addEventListener("submit", async (e) => {
   }
 
   const usuario = {
-    ID-alfanumerico: nombreUsuario,
+    nombre_usuario: nombreUsuario,
     correo_electronico: correoElectronico,
     contrasena: contrasena,
   };
+
+
+
 
   const respuesta = await fetch("/registrar", {
     method: "post",
@@ -53,7 +56,6 @@ formulario.addEventListener("submit", async (e) => {
     alert("Se ha producido un error al registrar el usuario");
   }
 });
-
 
 
 /*Fin Registro Inicial Usuario*/
