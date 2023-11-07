@@ -7,29 +7,52 @@ menuItems.forEach(function (item) {
     });
 });
 /*Inicio Registro Inicial Usuario*/
-/*  Validar que el ID de usuario solo contenga caracteres alfanuméricos*/
-(function () { var id = document.getElementById("id"); id.addEventListener("input", function () { var regex = /^[a-zA-Z0-9]+$/; if (!regex.test(id.value)) { id.style.borderColor = "#ff0000"; } else { id.style.borderColor = "#ccc"; } });
 
-/* Validar que la contraseña solo contenga caracteres alfanuméricos*/
+const formulario = document.querySelector("form");
 
-var password = document.getElementById("password");
-password.addEventListener("input", function() {
-  var regex = /^[a-zA-Z0-9]+$/;
-  if (!regex.test(password.value)) {
-    password.style.borderColor = "#ff0000";
+formulario.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const nombreUsuario = formulario.querySelector("input[name='nombre_usuario']").value;
+  const correoElectronico = formulario.querySelector("input[name='correo_electronico']").value;
+  const contrasena = formulario.querySelector("input[name='contrasena']").value;
+
+  if (nombreUsuario === "") {
+    alert("El nombre de usuario no puede estar vacío");
+    return;
+  }
+
+  if (!/\S+@\S+\.\S+/.test(correoElectronico)) {
+    alert("El correo electrónico no es válido");
+    return;
+  }
+
+  if (contrasena.length < 8) {
+    alert("La contraseña debe tener al menos 8 caracteres");
+    return;
+  }
+
+  const usuario = {
+    nombre_usuario: nombreUsuario,
+    correo_electronico: correoElectronico,
+    contrasena: contrasena,
+  };
+
+  const respuesta = await fetch("/registrar", {
+    method: "post",
+    body: JSON.stringify(usuario),
+  });
+
+  if (respuesta.status === 200) {
+    // El usuario se ha registrado correctamente
+    alert("El usuario se ha registrado correctamente");
+    window.location.href = "/";
   } else {
-    password.style.borderColor = "#ccc";
+    // Se ha producido un error al registrar el usuario
+    alert("Se ha producido un error al registrar el usuario");
   }
 });
-/*Validar que el correo electrónico sea válido*/
-var email = document.getElementById("email");
-email.addEventListener("input", function() {
-  var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,6}$/;
-  if (!regex.test(email.value)) {
-    email.style.borderColor = "#ff0000";
-  } else {
-    email.style.borderColor = "#ccc";
-  }
-});
-})();
+
+
+
 /*Fin Registro Inicial Usuario*/
