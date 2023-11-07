@@ -219,3 +219,34 @@ li.menu-item {
   justify-content: center;
   font-weight: bold;
 }
+
+/*Inicio Registro Inicial Usuario*/
+#regisrto-inicial-usuario {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#regisrto-inicial-usuario .form-group {
+  margin-bottom: 10px;
+}
+
+#regisrto-inicial-usuario label {
+  font-weight: bold;
+}
+
+#regisrto-inicial-usuario input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#regisrto-inicial-usuario button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*Fin Registro Inicial Usuario*/
