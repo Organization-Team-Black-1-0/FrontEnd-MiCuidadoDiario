@@ -13,8 +13,8 @@ const formulario = document.querySelector("form");
 formulario.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const nombreUsuario = formulario.querySelector("input[name='nombre_usuario']").value;
-  const correoElectronico = formulario.querySelector("input[name='correo_electronico']").value;
+  const nombreUsuario = formulario.querySelector("input[name='ID-alfanumerico']").value;
+  /*const correoElectronico = formulario.querySelector("input[name='correo_electronico']").value;*/
   const contrasena = formulario.querySelector("input[name='contrasena']").value;
 
   if (nombreUsuario === "") {
@@ -33,8 +33,8 @@ formulario.addEventListener("submit", async (e) => {
   }
 
   const usuario = {
-    nombre_usuario: nombreUsuario,
-    correo_electronico: correoElectronico,
+    ID-alfanumerico: nombreUsuario,
+    /*correo_electronico: correoElectronico,*/
     contrasena: contrasena,
   };
 
