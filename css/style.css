@@ -39,7 +39,7 @@ li {
 
 .button {
   border-radius: 55px;
-  background: #0B6EFE;
+  background: #0b6efe;
   border: none;
   width: 9rem;
   height: 3rem;
@@ -49,6 +49,7 @@ li {
   border: outset;
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
 }
 
 .Inputs-L {
@@ -64,7 +65,7 @@ li {
 
 .Inputs-L::placeholder {
   text-align: center;
-   color: #005FB3;
+  color: #005fb3;
 }
 
 h1 {
@@ -106,7 +107,6 @@ h3 {
   text-align: center;
 }
 
-
 .logo-header {
   max-width: 100px;
   height: 70px;
@@ -132,12 +132,11 @@ li.menu-item {
 
 li.menu-item:hover,
 li.menu-item a.active,
-a.button:hover{
-    background-color: #a2c6f0;
-    border-radius: 30px;
-    transition:background-color, 0,3s;
+a.button:hover {
+  background-color: #a2c6f0;
+  border-radius: 30px;
+  transition: background-color, 0, 3s;
 }
-
 
 .main {
   background-image: url("/utilities/img/landing1.png");
@@ -149,12 +148,11 @@ a.button:hover{
   background-blend-mode: multiply;
   display: flex;
   flex-direction: column;
-  }
+}
 
 .main__picture {
   max-width: 400px;
   margin-top: 250px;
-  
 }
 
 .main__img {
@@ -170,8 +168,7 @@ a.button:hover{
 #home-section {
   display: flex;
   justify-content: center;
-  
-  }
+}
 
 .wrap-home-section {
   display: flex;
@@ -179,14 +176,12 @@ a.button:hover{
   align-items: center;
   max-width: 800px;
   color: #fff;
-  padding: 10%;
-  
+  padding: 5%;
 }
 
+/*Register Section*/
 
-/*Login Section*/
-
-#login-section {
+#register-section {
   display: flex;
   justify-content: center;
   max-height: max-content;
@@ -201,7 +196,7 @@ a.button:hover{
   padding: 15%;
 }
 
-.login-title{
+.login-title {
   color: #fff;
   font-size: 20px;
   font-style: normal;
@@ -213,7 +208,13 @@ a.button:hover{
   font-family: "Itim", cursive;
 }
 
+/* Login Section*/
 
+#login-section {
+  display: flex;
+  justify-content: center;
+  max-height: max-content;
+}
 
 /* CheckList Section */
 
@@ -270,18 +271,15 @@ a.button:hover{
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  
 }
 
 @media screen and (max-width: 800px) {
+  #home-section {
+    flex-direction: row;
+    padding: 10%;
+  }
 
-#home-section{
-  flex-direction: row; 
+  .main__picture {
+    display: none;
+  }
 }
-
-.main__picture {
-  display: none;
-}
-
-}
-
