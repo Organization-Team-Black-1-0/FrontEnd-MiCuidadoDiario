@@ -78,3 +78,22 @@ De la información obtenida podemos validar la factibilidad de nuestro proyecto 
 ## 4. Consideraciones generales
 
 ¡Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet libero dictumst, rhoncus pharetra donec orci bibendum praesent cum hendrerit congue velit, posuere dictum nostra fringilla nulla dui maecenas tincidunt molestie.
+
+
+
+# jose teodoro sosa 
+# Parasitic-art-guil
+# plan mantenimiento industrial
+# MiCuidadoDiario
+# Team Black 1
+# Olimpiadas Copa
+# Karelis Montenegro
+# Beatriz Maldonado
+
+email
+https://account.proton.me/login
+ID: administrador-mcd
+administrador-mcd@proton.me
+
+El dia 11/11/2023 17:05 BOGOTA se crea el repositorio https://github.com/Organization-Team-Black-1-0/C-L-R-P-A.git en el cual se esta realizando la vista de registro de presion arterial.
+
