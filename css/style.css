@@ -2,6 +2,7 @@
   outline: 1px solid limegreen !important;
 }*/
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   /*scroll-behavior: smooth;*/
@@ -14,10 +15,10 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  opacity: 0.7;
+  /*opacity: 0.8;****/
   padding: 30px;
   text-align: center;
-  font-family: "Itim", cursive;
+  /*font-family: "Itim", cursive;*/
 }
 
 a {
@@ -30,12 +31,41 @@ li {
   list-style: none;
 }
 
+.button:hover {
+  border: inset;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .button {
-  width: 200px;
-  height: 75px;
   border-radius: 55px;
-  color: #fff;
-  background: linear-gradient(90deg, #0483ba 0%, #00b2ff 100%);
+  background: #0b6efe;
+  border: none;
+  width: 9rem;
+  height: 3rem;
+  margin: 1rem;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  border: outset;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.Inputs-L {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 300px;
+  padding: 15px;
+  border-color: #97d9e1;
+  margin-top: 1%;
+}
+
+.Inputs-L::placeholder {
+  text-align: center;
+  color: #005fb3;
 }
 
 h1 {
@@ -55,6 +85,7 @@ h2 {
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   opacity: 0.9;
+  color: #fff;
 }
 
 h3 {
@@ -68,7 +99,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  height: 90px;
+  height: 70px;
   width: 100%;
   position: fixed;
   top: 0%;
@@ -76,17 +107,17 @@ h3 {
   text-align: center;
 }
 
-
 .logo-header {
   max-width: 100px;
-  height: 100%;
-  width: 100%;
+  height: 70px;
+  width: 70px;
 }
 
 .icono-header {
-  max-width: 90px;
-  height: 90%;
-  width: 90%;
+  max-width: 50px;
+  height: 50px;
+  width: 50px;
+  opacity: 0.7;
 }
 
 #menu-principal {
@@ -96,15 +127,19 @@ h3 {
 }
 
 li.menu-item {
-  padding: 30px;
-  font-size: larger;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+}
 
-
+li.menu-item:hover,
+li.menu-item a.active,
+a.button:hover {
+  background-color: #a2c6f0;
+  border-radius: 30px;
+  transition: background-color, 0, 3s;
 }
 
 .main {
-  background-image: url("/utilities/img/landing.png");
+  background-image: url("/utilities/img/landing1.png");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -125,14 +160,15 @@ li.menu-item {
   width: 500px;
   padding: 20px;
   align-content: center;
+  border-radius: 10%;
 }
 
-/*Home Section **/
+/*Home Section */
 
 #home-section {
   display: flex;
-  
-  }
+  justify-content: center;
+}
 
 .wrap-home-section {
   display: flex;
@@ -140,15 +176,14 @@ li.menu-item {
   align-items: center;
   max-width: 800px;
   color: #fff;
-  padding: 15%;
-  
+  padding: 5%;
 }
 
+/*Register Section*/
 
-/*Login Section*/
-
-#login-section {
+#register-section {
   display: flex;
+  justify-content: center;
   max-height: max-content;
 }
 
@@ -161,7 +196,25 @@ li.menu-item {
   padding: 15%;
 }
 
+.login-title {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+  padding: 10px;
+  text-align: center;
+  font-family: "Itim", cursive;
+}
 
+/* Login Section*/
+
+#login-section {
+  display: flex;
+  justify-content: center;
+  max-height: max-content;
+}
 
 /* CheckList Section */
 
@@ -169,6 +222,7 @@ li.menu-item {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  color: #fff;
 }
 
 .item-checkList-section {
@@ -180,25 +234,18 @@ li.menu-item {
   height: 225px;
 }
 
-/** Footer **/
+/** Footer 
 
 .footer-section {
-  /*max-width: 1200px;
-  margin: 0 auto;
-  background: #f2f2f2;
-  padding: 20px;
-  color: #0483ba;*/
   display: flex;
-  justify-content: space-between;
-  /*align-items: center;*/
   padding: 10px;
-  height: 90px;
+  height: 50px;
   width: 100%;
-  position: fixed;
   bottom: 0%;
   background: #f2f2f2;
-  text-align: centar;
+  text-align: center;
   font-size: large;
+  color: #0483ba;
 }
 
 .icono-footer {
@@ -210,12 +257,29 @@ li.menu-item {
 .footer-creds {
   display: flex;
   justify-content: center;
+  
+}**/
+
+.footer-section {
+  background: #f2f2f2;
+  padding: 20px;
+  color: #0483ba;
 }
 
-
-
-.send-email {
+.footer-creds {
   display: flex;
   justify-content: center;
-  font-weight: bold;
+  text-align: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  #home-section {
+    flex-direction: row;
+    padding: 10%;
+  }
+
+  .main__picture {
+    display: none;
+  }
 }
