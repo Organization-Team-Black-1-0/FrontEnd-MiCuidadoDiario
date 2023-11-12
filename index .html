@@ -37,7 +37,10 @@
             <h2>¡Tu bienestar, nuestra prioridad diaria!</h2>
             <p>Mi cuidado diario es una herramienta que te permitirá como cuidador, seguir y controlar la presión arterial, brindar apoyo recordando las actividades que a diario se deben realizar para garantizar la supervivencia física y emocional del adulto mayor.</p>
             <div class="buttonCover">
-                <button type="button" class="button"  href='#registro';> ¡Registrarse! </button></div>
+               <form action="crear-registros" method="post"><button type="button" class="button"  href='#registro';> ¡Registrarse! </button>
+               </form> 
+            </div>
+              
       </div>
     </section>
 
@@ -48,23 +51,25 @@
         <div class="wrap-home-section">
             <h1><strong> Mi Cuidado Diario</strong></h1>
             <p>¡Tu bienestar, nuestra prioridad diaria!.</p>
-            <ul>
-                <li>
-                    Usuario
-                </li>
-                <li>
-                    <input class="casilla-input" type="text" name="usuario" placeholder="Usuario" maxlength="20">
-                </li>
-                <li>
-                    Contraseña
-                </li>
-                <li>
-                    <input class="casilla-input" type="password" name="cotraseña" placeholder="Contraseña" maxlength="10">
-                </li>
-                <li>
-                    <input type="submit" value="Entrar">
-                </li>
-            </ul>
+            <form action="/users" method="post"> <ul>
+              <li>
+                  Usuario
+              </li>
+              <li>
+                  <input class="casilla-input" type="text" name="usuario" placeholder="Usuario" maxlength="20">
+              </li>
+              <li>
+                  Contraseña
+              </li>
+              <li>
+                  <input class="casilla-input" type="password" name="cotraseña" placeholder="Contraseña" maxlength="10">
+              </li>
+              <li>
+                  <input type="submit" value="Entrar">
+              </li>
+          </ul>
+        </form>
+            
         </div>
     </section>
   
@@ -75,30 +80,25 @@
         <p>CheckList</p>
         <p> Una particularidad que tiene esta herramienta, es el check list, el cuál te permitirá tildar aquellas actividades que deben realizarse en el transcurso del día. 
             Como por ejemplo:
-            Tomar la presión en horas de la mañana y por la tarde.
-            Evaluar los estados de ánimo y físico que presenta el adulto mayor.
-            Realizar actividades de higiene y confort que garanticen la tranquilidad del adulto mayor.
+            Tomar la presión en horas de la mañana y por la tarde
+            Evaluar los estados de ánimo y físico que presenta el adulto mayor
+            Realizar actividades de higiene y confort que garanticen la tranquilidad del adulto mayor
        </p>
     </div>
     <div class="wrap-checkList-section">
       <a href="" class="item-checkList-section">
-        <img src="utilities/img/riesgoMedico.png" alt="Riesgo Medico">
-          <p>Riesgo Médico</p>
-        </img>
-      </a>
-      <a href="" class="item-checkList-section">
         <img src="utilities/img/caidaAdultoMayor.png" alt="Riesgo Fisico">
-          <p>Riesgo Fisico</p>
+          <p>Estado de Animo </p>
         </img>
       </a>
       <a href="" class="item-checkList-section">
         <img src="utilities/img/saludMentalAdultoMayor.png" alt="Riesgo Psicológico">
-          <p>Riesgo Psicológico</p>
+          <p>Higiene y Confort</p>
         </img>
       </a>
       <a href="" class="item-checkList-section">
         <img src="utilities/img/SignosVitales.png" alt="Signos Vitales">
-          <p>Signos Vitales</p>
+          <p>Presión Artrial (SV)</p>
         </img>
       </a>
     </div>
