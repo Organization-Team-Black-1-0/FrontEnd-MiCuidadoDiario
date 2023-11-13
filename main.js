@@ -1,8 +1,27 @@
-const menuItems = document.querySelectorAll(".menu-item");
-menuItems.forEach(function (item) {
-  item.addEventListener("click", function (e) {
-    const currentItem = document.querySelector(".active");
-    currentItem.classList.remove("active");
-    e.target.classList.add("active");
-  });
-});
+const route = (event) => {
+    event = event || window.event;
+    event.preventDefault();
+    window.history.pushState({}, "", event.target.href);
+    handleLocation();
+};
+
+const routes = {
+    "/": "/pages/home.html",
+    "/register": "/pages/register.html",
+    "/login": "/pages/login.html",
+    "/checkList": "/pages/checkList.html",
+    404: "/pages/404.html"
+};
+
+const handleLocation = async () => {
+    const path = window.location.pathname;
+    const route = routes[path] || routes[404];
+    const html = await fetch(route).then((data) => data.text());
+    document.getElementById("main-page").innerHTML = html;
+};
+
+window.onpopstate = handleLocation;
+window.route = route;
+
+handleLocation();
+
