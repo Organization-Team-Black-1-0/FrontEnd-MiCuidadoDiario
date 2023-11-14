@@ -1,61 +1,27 @@
-const menuItems = document.querySelectorAll('.menu-item');
-menuItems.forEach(function (item) {
-    item.addEventListener('click', function (e) {
-        const currentItem = document.querySelector('.active');
-        currentItem.classList.remove('active');
-        e.target.classList.add('active');
-    });
-});
+const route = (event) => {
+    event = event || window.event;
+    event.preventDefault();
+    window.history.pushState({}, "", event.target.href);
+    handleLocation();
+};
 
-/*Inicio Registro Inicial Usuario*/
+const routes = {
+    "/": "/pages/home.html",
+    "/register": "/pages/register.html",
+    "/login": "/pages/login.html",
+    "/checkList": "/pages/checkList.html",
+    404: "/pages/404.html"
+};
 
-const formulario = document.querySelector("form");
+const handleLocation = async () => {
+    const path = window.location.pathname;
+    const route = routes[path] || routes[404];
+    const html = await fetch(route).then((data) => data.text());
+    document.getElementById("main-page").innerHTML = html;
+};
 
-formulario.addEventListener("submit", async (e) => {
-  e.preventDefault();
+window.onpopstate = handleLocation;
+window.route = route;
 
-  const nombreUsuario = formulario.querySelector("input[name='ID_alfanumerico']").value;
-  const correoElectronico = formulario.querySelector("input[name='correo_electronico']").value;
-  const contrasena = formulario.querySelector("input[name='contrasena']").value;
+handleLocation();
 
-  if (nombreUsuario === "") {
-    alert("El nombre de usuario no puede estar vacío");
-    return;
-  }
-
-  if (!/\S+@\S+\.\S+/.test(correoElectronico)) {
-    alert("El correo electrónico no es válido");
-    return;
-  }
-
-  if (contrasena.length < 8) {
-    alert("La contraseña debe tener al menos 8 caracteres");
-    return;
-  }
-
-  const usuario = {
-    nombre_usuario: nombreUsuario,
-    correo_electronico: correoElectronico,
-    contrasena: contrasena,
-  };
-
-
-
-
-  const respuesta = await fetch("/registrar", {
-    method: "post",
-    body: JSON.stringify(usuario),
-  });
-
-  if (respuesta.status === 200) {
-    // El usuario se ha registrado correctamente
-    alert("El usuario se ha registrado correctamente");
-    window.location.href = "/";
-  } else {
-    // Se ha producido un error al registrar el usuario
-    alert("Se ha producido un error al registrar el usuario");
-  }
-});
-
-
-/*Fin Registro Inicial Usuario*/
